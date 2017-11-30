@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/{any}/{param1?}/{param2?}', function () {
+Route::get('/{any}/{param1?}/{param2?}/', function () {
 	return view('app');
 })->where('any', '.*');
 

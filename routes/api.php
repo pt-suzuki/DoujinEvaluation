@@ -18,5 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => 'api'], function () {
-	Route::get('thread/{usercode?}/{pagecode?}',  'ThreadController@index');
+	Route::get('thread/{usercode?}/{pagecode?}/',  'ThreadController@index');
 });
